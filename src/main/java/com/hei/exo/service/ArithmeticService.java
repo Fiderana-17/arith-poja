@@ -15,4 +15,10 @@ public class ArithmeticService {
         validate(a, b);
         return a + b;
     }
+
+    public int subtract(int a, int b) {
+        validate(a, b);
+        return a - b;
+    }
+
 }

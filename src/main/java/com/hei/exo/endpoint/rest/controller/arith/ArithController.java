@@ -15,4 +15,8 @@ public class ArithController {
         return arithmeticService.add(a, b);
     }
 
+    @GetMapping("/subtract")
+    public int subtract(int a, int b) {
+        return arithmeticService.subtract(a, b);
+    }
 }
