@@ -21,4 +21,8 @@ public class ArithmeticService {
         return a - b;
     }
 
+    public int multiply(int a, int b) {
+        validate(a, b);
+        return a * b;
+    }
 }
