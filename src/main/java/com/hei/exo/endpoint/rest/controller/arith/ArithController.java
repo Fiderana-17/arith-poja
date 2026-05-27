@@ -24,4 +24,9 @@ public class ArithController {
     public int multiply(int a, int b) {
         return arithmeticService.multiply(a, b);
     }
+
+    @GetMapping("/divide")
+    public double divide(int a, int b) {
+        return arithmeticService.divide(a, b);
+    }
 }

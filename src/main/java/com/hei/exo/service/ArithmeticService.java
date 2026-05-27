@@ -25,4 +25,12 @@ public class ArithmeticService {
         validate(a, b);
         return a * b;
     }
+
+    public double divide(int a, int b) {
+        validate(a, b);
+        if (b == 0) {
+            throw new IllegalArgumentException("Cannot divide by zero");
+        }
+        return (double) a / b;
+    }
 }
