@@ -17,18 +17,8 @@ public class ArithController {
         return arithmeticService.add(a, b);
     }
 
-    @PostMapping("/add")
-    public int addPost(@RequestParam int a, @RequestParam int b) {
-        return arithmeticService.add(a, b);
-    }
-
     @GetMapping("/subtract")
     public int subtract(@RequestParam int a, @RequestParam int b) {
-        return arithmeticService.subtract(a, b);
-    }
-
-    @PostMapping("/subtract")
-    public int subtractPost(@RequestParam int a, @RequestParam int b) {
         return arithmeticService.subtract(a, b);
     }
 
@@ -37,18 +27,9 @@ public class ArithController {
         return arithmeticService.multiply(a, b);
     }
 
-    @PostMapping("/multiply")
-    public int multiplyPost(@RequestParam int a, @RequestParam int b) {
-        return arithmeticService.multiply(a, b);
-    }
-
     @GetMapping("/divide")
     public double divide(@RequestParam int a, @RequestParam int b) {
         return arithmeticService.divide(a, b);
     }
 
-    @PostMapping("/divide")
-    public double dividePost(@RequestParam int a, @RequestParam int b) {
-        return arithmeticService.divide(a, b);
-    }
 }
